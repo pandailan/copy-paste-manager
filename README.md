@@ -61,7 +61,7 @@ This repository is for public product support and feedback. The app source code 
 
 ## Install with Homebrew
 
-The Homebrew channel currently installs the signed, notarized **2.0.5 (3) release candidate** for macOS 14 Sonoma or later (Apple Silicon and Intel).
+The Homebrew channel currently installs the signed, notarized **2.0.6 (4) release candidate** for macOS 14 Sonoma or later (Apple Silicon and Intel).
 
 ```sh
 brew tap pandailan/copy-paste-manager https://github.com/pandailan/copy-paste-manager.git
@@ -74,4 +74,4 @@ Start at Login is off until you explicitly enable it. Accessibility is optional:
 
 The direct and App Store versions share the same app identity and local history; install one distribution at a time. Updates use `brew update` and `brew upgrade --cask copy-paste-manager`. Normal Homebrew uninstall preserves local history; turn off Start at Login in Preferences before uninstalling.
 
-This is a release candidate. Clean-account reboot checks and the visual permission demonstration are still pending, and App Store review has not been completed.
+This is a release candidate. Capture/search/manual paste and direct paste have been demonstrated with permission denied and granted respectively. Clean-account login/reboot and some keyboard-layout/manual edge cases remain unverified. App Store review has not been completed.

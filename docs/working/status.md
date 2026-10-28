@@ -1,0 +1,9 @@
+# Working status — 2026-10-28
+
+The public repository is `pandailan/copy-paste-manager`; application source remains private. A dedicated primary checkout on local `dev` and owned sibling worktree establish the shared workflow non-destructively from public `main` `3649b76`.
+
+`feature/app-001-release-candidate` owns workflow setup, cask, exact prerelease allowlist, README and release delivery. Next app-wide number: 002. The locked integration helper verifies a retained candidate with Python tooling tests, Homebrew style and online cask audit, then advances only clean `dev`. Public `main` must receive only a normal fast-forward push of verified `dev`.
+
+The prepared candidate is **2.0.6 (4)** for macOS 14+, Apple Silicon and Intel. Signed/notarized universal ZIP SHA-256: `040c3345ff0ebbe346415a1fabf4321272f7da1479b72817213fba1045f47f20`. Its exact asset URL is `https://github.com/pandailan/copy-paste-manager/releases/download/v2.0.6-4/Copy-Paste-Manager-2.0.6-4.zip`. Release remains a prerelease; App Store review is separate. Publication and cask integration are in progress; the handoff records observed completion evidence. Old releases and the 2.0.6 (1) draft are preserved.
+
+Clean-account login/reboot and some manual keyboard-layout/edge-case acceptance remain unverified. Do not claim stable or App Store approval. Normal uninstall preserves history; no zap is supplied.

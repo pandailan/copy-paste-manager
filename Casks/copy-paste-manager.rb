@@ -1,6 +1,6 @@
 cask "copy-paste-manager" do
-  version "2.0.5,3"
-  sha256 "df154323cc96b45ee9f998abd36394f2c60d2fe03ea84080409fadfc36170ae5"
+  version "2.0.6,4"
+  sha256 "040c3345ff0ebbe346415a1fabf4321272f7da1479b72817213fba1045f47f20"
 
   url "https://github.com/pandailan/copy-paste-manager/releases/download/v#{version.csv.first}-#{version.csv.second}/Copy-Paste-Manager-#{version.csv.first}-#{version.csv.second}.zip"
   name "Copy Paste Manager"
