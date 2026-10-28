@@ -8,6 +8,19 @@ cask "copy-paste-manager" do
   desc "Private clipboard history with search, collections, and paste workflows"
   homepage "https://copypastemanager.com/"
 
+  livecheck do
+    url :url
+    regex(/^v?(\d+(?:\.\d+)+)-(\d+)$/i)
+    strategy :github_releases do |json, regex|
+      json.filter_map do |release|
+        next if release["draft"]
+
+        match = release["tag_name"]&.match(regex)
+        "#{match[1]},#{match[2]}" if match
+      end
+    end
+  end
+
   depends_on macos: :sonoma
 
   app "Copy Paste Manager.app"
