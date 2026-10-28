@@ -1,0 +1,8 @@
+{
+  "name": "copy-paste-manager-public-distribution",
+  "private": true,
+  "scripts": {
+    "integrate": "python3 scripts/integrate.py",
+    "verify": "python3 scripts/verify.py"
+  }
+}
